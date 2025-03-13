@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Punch In/Out & Admin Dashboard</title>
+    <title>ATS Employee Punch In/Out & Admin Dashboard</title>
     <style>
         * {
             margin: 0;
@@ -12,7 +12,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background: #f0f2f5;
+            background: #95df96;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,8 +24,8 @@
             padding: 20px;
         }
         .header {
-            background: linear-gradient(135deg, #2193b0, #6dd5ed);
-            color: white;
+            background: linear-gradient(135deg, #27adce, #6dd5ed);
+            color: rgb(142, 235, 181);
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
@@ -33,7 +33,7 @@
             text-align: center;
         }
         .employee-form, .attendance-grid {
-            background: white;
+            background: rgb(166, 243, 183);
             border-radius: 10px;
             padding: 30px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -41,7 +41,7 @@
         }
         input {
             padding: 15px;
-            border: 1px solid #ddd;
+            border: 1px solid #83e39b;
             border-radius: 5px;
             font-size: 16px;
             width: 100%;
@@ -143,13 +143,14 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Employee Attendance System</h1>
+            <h1>ATS Employee Attendance System</h1>
         </div>
 
         <!-- Employee Punch In/Out Section -->
         <div class="employee-form">
             <h2>Punch In/Out</h2>
             <input type="text" id="employeeId" placeholder="Enter Employee ID">
+            <input type="text" id="employeeName" placeholder="Enter Employee Name">
             <button class="punch-in" onclick="punchIn()">Punch In</button>
             <button class="punch-out" onclick="punchOut()">Punch Out</button>
             <div id="statusMessage" class="status-message"></div>
